@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  Holy-Bible
+
+  Created by Ragaie alfy on 7/24/17.
+  Copyright © 2017 Ragaie alfy. All rights reserved.
+*/
+
+"Home" = "الرئيسيه";
+"Setting" = "الاعدادات";
+"English" = "الانجليزيه";
+"Arabic" = "العربيه";
+
+
+"Select item..." = "...قم باختيار عنصر ";
+"New Testment" = "العهد الجديد";
+"Old Testment" = "العهد القديم";
+"Holy Bible" = "الكتاب المقدس";
+
+
+"Genesis" = "التكوين";
+"Exodus" = "الخروج";
+"Leviticus" = "اللاويين";
+"Numbers" = "العدد";
+"Deuteronomy" = "التثنية";
+"Joshua" = "يشوع";
+"Judges" = "القضاة";
+"Ruth" = "راعوث";
+"1 Samuel" = "صموئيل الأول 1";
+"2 Samuel" = "صموئيل الثاني 2";
+"1 Kings" = "الملوك الأول 1";
+"2 Kings" = "لملوك الثاني 2";
+"1 Chronicles" = "أخبار الأيام الأول 1
+";
+"2 Chronicles" = "أخبار الأيام الثاني 2
+";
+"Ezra" = "عزرا";
+"Nehemiah" = "نحميا";
+"Esther" = "أستير";
+"Job" = "أيوب";
+"Psalms" = "المزامير";
+"Proverbs" = "الأمثال";
+"Ecclesiastes" = "الجامعة";
+"Song of Solomon" = "نشيد الأنشاد";
+"Isaiah" = "أشعياء";
+"Jeremiah" = "أرمياء";
+"Lamentations" = "مراثي أرمياء";
+"Ezekiel" = "حزقيال";
+"Daniel" = "دانيال";
+"Hosea" = "هوشع";
+"Joel" = "يوئيل";
+"Amos" = "عاموس";
+"Obadiah" = "عوبديا";
+"Jonah" = "يونان";
+"Micah" = "ميخا";
+"Nahum" = "ناحوم";
+"Habakkuk" = "حبقوق";
+"Zephaniah" = "صفنيا";
+"Haggai" = "حجي";
+"Zechariah" = "زكريا";
+"Malachi" = "ملاخي";
+
+
+//////////old testment
+ 
+
+"Matthew" = "متى";
+"Mark" = "مرقس";
+"Luke" = "لوقا";
+"John" = "يوحنا";
+"Acts" = "أعمال الرسل";
+"Romans" = "رومية";
+"1 Corinthians" = "كورنثوس 1";
+"2 Corinthians" = "كورنثوس 2";
+"Galatians" = "غلاطية";
+"Ephesians" = "أفسس";
+"Philippians" = "فيليبي";
+"Colossians" = "كولوسي";
+"1 Thessalonians" = "تسالونيكي 1";
+"2 Thessalonians" = "تسالونيكي 2";
+"1 Timothy" = "تيموثاوس 1";
+"2 Timothy" = "تيموثاوس 2";
+"Titus" = "تيطس";
+"Philemon" = "فيليمون";
+"Hebrews" = "العبرانيين";
+"James" = "يعقوب";
+"1 Peter" = "بطرس 1";
+"2 Peter" = "بطرس 2";
+"1 John" = "يوحنا 1";
+"2 John" = "يوحنا 2";
+"3 John" = "يوحنا 3";
+"Jude" = "يهوذا";
+"Revelation" = "رؤيا";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

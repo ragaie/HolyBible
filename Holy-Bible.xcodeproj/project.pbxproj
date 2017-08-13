@@ -8,20 +8,393 @@
 
 /* Begin PBXBuildFile section */
 		812BC0AE1F25F05C0086EAA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0AD1F25F05C0086EAA3 /* AppDelegate.swift */; };
-		812BC0B01F25F05C0086EAA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0AF1F25F05C0086EAA3 /* ViewController.swift */; };
 		812BC0B31F25F05C0086EAA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 812BC0B11F25F05C0086EAA3 /* Main.storyboard */; };
 		812BC0B51F25F05C0086EAA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812BC0B41F25F05C0086EAA3 /* Assets.xcassets */; };
 		812BC0B81F25F05C0086EAA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 812BC0B61F25F05C0086EAA3 /* LaunchScreen.storyboard */; };
+		812BC0C71F25F1060086EAA3 /* SideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0C41F25F1060086EAA3 /* SideView.swift */; };
+		812BC0C81F25F1060086EAA3 /* SideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0C51F25F1060086EAA3 /* SideController.swift */; };
+		812BC0C91F25F1060086EAA3 /* SideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0C61F25F1060086EAA3 /* SideModel.swift */; };
+		812BC0CD1F25F11A0086EAA3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0CC1F25F11A0086EAA3 /* SWRevealViewController.m */; };
+		812BC0D11F25F1970086EAA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0D01F25F1970086EAA3 /* ViewController.swift */; };
+		812BC0D31F25F1CF0086EAA3 /* LanguageChangeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0D21F25F1CF0086EAA3 /* LanguageChangeClass.swift */; };
+		812BC0D51F25F3FA0086EAA3 /* SingleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0D41F25F3FA0086EAA3 /* SingleClass.swift */; };
+		812BC0DA1F25F7E10086EAA3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 812BC0DC1F25F7E10086EAA3 /* Localizable.strings */; };
+		812BC0E01F25FB6C0086EAA3 /* SettingStaticTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0DF1F25FB6C0086EAA3 /* SettingStaticTableView.swift */; };
+		812BC0E21F25FFD20086EAA3 /* SettingStaticTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0E11F25FFD20086EAA3 /* SettingStaticTableController.swift */; };
+		812BC0EC1F2605920086EAA3 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 812BC0E91F2605920086EAA3 /* arrow.png */; };
+		812BC0ED1F2605920086EAA3 /* DropDown.xib in Resources */ = {isa = PBXBuildFile; fileRef = 812BC0EA1F2605920086EAA3 /* DropDown.xib */; };
+		812BC0EE1F2605920086EAA3 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0EB1F2605920086EAA3 /* DropDown.swift */; };
+		812BC0F01F260A130086EAA3 /* SideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BC0EF1F260A130086EAA3 /* SideTableViewCell.swift */; };
+		8137CB6B1F288CB300ABF998 /* TextDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137CB6A1F288CB300ABF998 /* TextDisplayView.swift */; };
+		8137CB6D1F288CC800ABF998 /* TextDisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137CB6C1F288CC800ABF998 /* TextDisplayController.swift */; };
+		8137CB7C1F28AC9300ABF998 /* PickerList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8137CB7B1F28AC9300ABF998 /* PickerList.xib */; };
+		8137CB7E1F28AC9D00ABF998 /* PickerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137CB7D1F28AC9D00ABF998 /* PickerList.swift */; };
+		8137CB821F28C01100ABF998 /* TextSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137CB811F28C01100ABF998 /* TextSettingView.swift */; };
+		8137CB841F28C02300ABF998 /* TextSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137CB831F28C02300ABF998 /* TextSettingController.swift */; };
+		8137CB861F28CC6800ABF998 /* TextSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137CB851F28CC6800ABF998 /* TextSettingModel.swift */; };
+		81395C6A1F274C8F00BFA7C2 /* andlso.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C541F274C8F00BFA7C2 /* andlso.ttf */; };
+		81395C6B1F274C8F00BFA7C2 /* arab3end.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C551F274C8F00BFA7C2 /* arab3end.ttf */; };
+		81395C6C1F274C8F00BFA7C2 /* ArabDances.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C561F274C8F00BFA7C2 /* ArabDances.ttf */; };
+		81395C6D1F274C8F00BFA7C2 /* ARABIAN KNIGHT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C571F274C8F00BFA7C2 /* ARABIAN KNIGHT.ttf */; };
+		81395C6E1F274C8F00BFA7C2 /* ARABOLIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 81395C581F274C8F00BFA7C2 /* ARABOLIC.TTF */; };
+		81395C6F1F274C8F00BFA7C2 /* BArabics.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C591F274C8F00BFA7C2 /* BArabics.ttf */; };
+		81395C701F274C8F00BFA7C2 /* BArshia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C5A1F274C8F00BFA7C2 /* BArshia.ttf */; };
+		81395C711F274C8F00BFA7C2 /* BCompset.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C5B1F274C8F00BFA7C2 /* BCompset.ttf */; };
+		81395C721F274C8F00BFA7C2 /* BDavat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C5C1F274C8F00BFA7C2 /* BDavat.ttf */; };
+		81395C731F274C8F00BFA7C2 /* BElham.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C5D1F274C8F00BFA7C2 /* BElham.ttf */; };
+		81395C741F274C8F00BFA7C2 /* BEsfhnBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C5E1F274C8F00BFA7C2 /* BEsfhnBd.ttf */; };
+		81395C751F274C8F00BFA7C2 /* Besmellah_2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C5F1F274C8F00BFA7C2 /* Besmellah_2.ttf */; };
+		81395C761F274C8F00BFA7C2 /* BFantezy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C601F274C8F00BFA7C2 /* BFantezy.ttf */; };
+		81395C771F274C8F00BFA7C2 /* BFerdosi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C611F274C8F00BFA7C2 /* BFerdosi.ttf */; };
+		81395C781F274C8F00BFA7C2 /* BJadidBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C621F274C8F00BFA7C2 /* BJadidBd.ttf */; };
+		81395C791F274C8F00BFA7C2 /* BKoodakO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C631F274C8F00BFA7C2 /* BKoodakO.ttf */; };
+		81395C7A1F274C8F00BFA7C2 /* Diwanltr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C641F274C8F00BFA7C2 /* Diwanltr.ttf */; };
+		81395C7B1F274C8F00BFA7C2 /* Taibaijan Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C651F274C8F00BFA7C2 /* Taibaijan Bold.otf */; };
+		81395C7C1F274C8F00BFA7C2 /* Taibaijan Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C661F274C8F00BFA7C2 /* Taibaijan Italic.otf */; };
+		81395C7D1F274C8F00BFA7C2 /* Taibaijan.otf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C671F274C8F00BFA7C2 /* Taibaijan.otf */; };
+		81395C7E1F274C8F00BFA7C2 /* Thabit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C681F274C8F00BFA7C2 /* Thabit.ttf */; };
+		81395C7F1F274C8F00BFA7C2 /* Besmellah_2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81395C691F274C8F00BFA7C2 /* Besmellah_2.ttf */; };
+		81395C821F275D5400BFA7C2 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81395C811F275D5400BFA7C2 /* extension.swift */; };
+		81395C881F27634C00BFA7C2 /* ListPartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81395C871F27634C00BFA7C2 /* ListPartView.swift */; };
+		81395C8A1F27655B00BFA7C2 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81395C891F27655B00BFA7C2 /* ListViewCell.swift */; };
+		81395C8C1F2765BA00BFA7C2 /* ListPartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81395C8B1F2765BA00BFA7C2 /* ListPartController.swift */; };
+		81395C8E1F276C8600BFA7C2 /* UIButtonExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81395C8D1F276C8600BFA7C2 /* UIButtonExtender.swift */; };
+		81395C901F27876000BFA7C2 /* ListPartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81395C8F1F27876000BFA7C2 /* ListPartModel.swift */; };
+		816581411F3B02ED00EB2FC3 /* Ruthar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165813D1F3B02ED00EB2FC3 /* Ruthar.rtf */; };
+		816581421F3B02ED00EB2FC3 /* Song of Solomonar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165813E1F3B02ED00EB2FC3 /* Song of Solomonar.rtf */; };
+		816581431F3B02ED00EB2FC3 /* Zechariahar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165813F1F3B02ED00EB2FC3 /* Zechariahar.rtf */; };
+		816581441F3B02ED00EB2FC3 /* Zephaniahar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581401F3B02ED00EB2FC3 /* Zephaniahar.rtf */; };
+		816581481F3B02F700EB2FC3 /* Obadiahar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581451F3B02F700EB2FC3 /* Obadiahar.rtf */; };
+		816581491F3B02F700EB2FC3 /* Proverbsar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581461F3B02F700EB2FC3 /* Proverbsar.rtf */; };
+		8165814A1F3B02F700EB2FC3 /* Psalmsar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581471F3B02F700EB2FC3 /* Psalmsar.rtf */; };
+		8165814E1F3B030000EB2FC3 /* Nahumar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165814B1F3B030000EB2FC3 /* Nahumar.rtf */; };
+		8165814F1F3B030000EB2FC3 /* Nehemiahar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165814C1F3B030000EB2FC3 /* Nehemiahar.rtf */; };
+		816581501F3B030000EB2FC3 /* Numbersar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165814D1F3B030000EB2FC3 /* Numbersar.rtf */; };
+		816581541F3B030A00EB2FC3 /* Leviticusar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581511F3B030A00EB2FC3 /* Leviticusar.rtf */; };
+		816581551F3B030A00EB2FC3 /* Malachiar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581521F3B030A00EB2FC3 /* Malachiar.rtf */; };
+		816581561F3B030A00EB2FC3 /* Micahar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581531F3B030A00EB2FC3 /* Micahar.rtf */; };
+		8165815A1F3B031200EB2FC3 /* Joshuaar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581571F3B031200EB2FC3 /* Joshuaar.rtf */; };
+		8165815B1F3B031200EB2FC3 /* Judgesar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581581F3B031200EB2FC3 /* Judgesar.rtf */; };
+		8165815C1F3B031200EB2FC3 /* Lamentationsar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581591F3B031200EB2FC3 /* Lamentationsar.rtf */; };
+		816581601F3B031900EB2FC3 /* Jobar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165815D1F3B031900EB2FC3 /* Jobar.rtf */; };
+		816581611F3B031900EB2FC3 /* Joelar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165815E1F3B031900EB2FC3 /* Joelar.rtf */; };
+		816581621F3B031900EB2FC3 /* Jonahar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165815F1F3B031900EB2FC3 /* Jonahar.rtf */; };
+		816581661F3B032400EB2FC3 /* Hoseaar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581631F3B032400EB2FC3 /* Hoseaar.rtf */; };
+		816581671F3B032400EB2FC3 /* Isaiahar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581641F3B032400EB2FC3 /* Isaiahar.rtf */; };
+		816581681F3B032400EB2FC3 /* Jeremiahar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581651F3B032400EB2FC3 /* Jeremiahar.rtf */; };
+		8165816C1F3B032B00EB2FC3 /* Genesisar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581691F3B032B00EB2FC3 /* Genesisar.rtf */; };
+		8165816D1F3B032B00EB2FC3 /* Habakkukar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165816A1F3B032B00EB2FC3 /* Habakkukar.rtf */; };
+		8165816E1F3B032B00EB2FC3 /* Haggaiar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165816B1F3B032B00EB2FC3 /* Haggaiar.rtf */; };
+		816581721F3B033400EB2FC3 /* Exodusar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165816F1F3B033400EB2FC3 /* Exodusar.rtf */; };
+		816581731F3B033400EB2FC3 /* Ezekielar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581701F3B033400EB2FC3 /* Ezekielar.rtf */; };
+		816581741F3B033400EB2FC3 /* Ezraar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581711F3B033400EB2FC3 /* Ezraar.rtf */; };
+		816581781F3B033B00EB2FC3 /* Deuteronomyar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581751F3B033B00EB2FC3 /* Deuteronomyar.rtf */; };
+		816581791F3B033B00EB2FC3 /* Ecclesiastesar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581761F3B033B00EB2FC3 /* Ecclesiastesar.rtf */; };
+		8165817A1F3B033B00EB2FC3 /* Estherar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581771F3B033B00EB2FC3 /* Estherar.rtf */; };
+		8165817E1F3B034300EB2FC3 /* 2nd Samuelar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165817B1F3B034300EB2FC3 /* 2nd Samuelar.rtf */; };
+		8165817F1F3B034300EB2FC3 /* Amosar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165817C1F3B034300EB2FC3 /* Amosar.rtf */; };
+		816581801F3B034300EB2FC3 /* Danielar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165817D1F3B034300EB2FC3 /* Danielar.rtf */; };
+		816581841F3B034B00EB2FC3 /* 1st Samuelar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581811F3B034B00EB2FC3 /* 1st Samuelar.rtf */; };
+		816581851F3B034B00EB2FC3 /* 2nd Chroniclesar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581821F3B034B00EB2FC3 /* 2nd Chroniclesar.rtf */; };
+		816581861F3B034B00EB2FC3 /* 2nd Kingsar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581831F3B034B00EB2FC3 /* 2nd Kingsar.rtf */; };
+		816581891F3B035200EB2FC3 /* 1st Chroniclesar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581871F3B035200EB2FC3 /* 1st Chroniclesar.rtf */; };
+		8165818A1F3B035200EB2FC3 /* 1st Kingsar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581881F3B035200EB2FC3 /* 1st Kingsar.rtf */; };
+		816581A61F3B036A00EB2FC3 /* 1st Corinthiansar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165818B1F3B036A00EB2FC3 /* 1st Corinthiansar.rtf */; };
+		816581A71F3B036A00EB2FC3 /* 1st Johnar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165818C1F3B036A00EB2FC3 /* 1st Johnar.rtf */; };
+		816581A81F3B036A00EB2FC3 /* 1st Peterar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165818D1F3B036A00EB2FC3 /* 1st Peterar.rtf */; };
+		816581A91F3B036A00EB2FC3 /* 1st Thessaloniansar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165818E1F3B036A00EB2FC3 /* 1st Thessaloniansar.rtf */; };
+		816581AA1F3B036A00EB2FC3 /* 1st Timothyar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165818F1F3B036A00EB2FC3 /* 1st Timothyar.rtf */; };
+		816581AB1F3B036A00EB2FC3 /* 2nd Corinthiansar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581901F3B036A00EB2FC3 /* 2nd Corinthiansar.rtf */; };
+		816581AC1F3B036A00EB2FC3 /* 2nd Johnar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581911F3B036A00EB2FC3 /* 2nd Johnar.rtf */; };
+		816581AD1F3B036A00EB2FC3 /* 2nd Peterar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581921F3B036A00EB2FC3 /* 2nd Peterar.rtf */; };
+		816581AE1F3B036A00EB2FC3 /* 2nd Thessaloniansar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581931F3B036A00EB2FC3 /* 2nd Thessaloniansar.rtf */; };
+		816581AF1F3B036A00EB2FC3 /* 2nd Timothyar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581941F3B036A00EB2FC3 /* 2nd Timothyar.rtf */; };
+		816581B01F3B036A00EB2FC3 /* 3rd Johnar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581951F3B036A00EB2FC3 /* 3rd Johnar.rtf */; };
+		816581B11F3B036A00EB2FC3 /* Actsar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581961F3B036A00EB2FC3 /* Actsar.rtf */; };
+		816581B21F3B036A00EB2FC3 /* Colossiansar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581971F3B036A00EB2FC3 /* Colossiansar.rtf */; };
+		816581B31F3B036A00EB2FC3 /* Ephesiansar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581981F3B036A00EB2FC3 /* Ephesiansar.rtf */; };
+		816581B41F3B036A00EB2FC3 /* Galatiansar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581991F3B036A00EB2FC3 /* Galatiansar.rtf */; };
+		816581B51F3B036A00EB2FC3 /* Hebrewsar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165819A1F3B036A00EB2FC3 /* Hebrewsar.rtf */; };
+		816581B61F3B036A00EB2FC3 /* Jamesar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165819B1F3B036A00EB2FC3 /* Jamesar.rtf */; };
+		816581B71F3B036A00EB2FC3 /* Johnar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165819C1F3B036A00EB2FC3 /* Johnar.rtf */; };
+		816581B81F3B036A00EB2FC3 /* Judear.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165819D1F3B036A00EB2FC3 /* Judear.rtf */; };
+		816581B91F3B036A00EB2FC3 /* Lukear.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165819E1F3B036A00EB2FC3 /* Lukear.rtf */; };
+		816581BA1F3B036A00EB2FC3 /* Markar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165819F1F3B036A00EB2FC3 /* Markar.rtf */; };
+		816581BB1F3B036A00EB2FC3 /* Matthewar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581A01F3B036A00EB2FC3 /* Matthewar.rtf */; };
+		816581BC1F3B036A00EB2FC3 /* Philemonar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581A11F3B036A00EB2FC3 /* Philemonar.rtf */; };
+		816581BD1F3B036A00EB2FC3 /* Philippiansar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581A21F3B036A00EB2FC3 /* Philippiansar.rtf */; };
+		816581BE1F3B036A00EB2FC3 /* Revelationar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581A31F3B036A00EB2FC3 /* Revelationar.rtf */; };
+		816581BF1F3B036A00EB2FC3 /* Romansar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581A41F3B036A00EB2FC3 /* Romansar.rtf */; };
+		816581C01F3B036A00EB2FC3 /* Titusar.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581A51F3B036A00EB2FC3 /* Titusar.rtf */; };
+		816581DC1F3B047D00EB2FC3 /* 1st Corinthiansen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581C11F3B047D00EB2FC3 /* 1st Corinthiansen.rtf */; };
+		816581DD1F3B047D00EB2FC3 /* 1st Johnen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581C21F3B047D00EB2FC3 /* 1st Johnen.rtf */; };
+		816581DE1F3B047D00EB2FC3 /* 1st Peteren.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581C31F3B047D00EB2FC3 /* 1st Peteren.rtf */; };
+		816581DF1F3B047D00EB2FC3 /* 1st Thessaloniansen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581C41F3B047D00EB2FC3 /* 1st Thessaloniansen.rtf */; };
+		816581E01F3B047D00EB2FC3 /* 1st Timothyen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581C51F3B047D00EB2FC3 /* 1st Timothyen.rtf */; };
+		816581E11F3B047D00EB2FC3 /* 2nd Corinthiansen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581C61F3B047D00EB2FC3 /* 2nd Corinthiansen.rtf */; };
+		816581E21F3B047D00EB2FC3 /* 2nd Johnen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581C71F3B047D00EB2FC3 /* 2nd Johnen.rtf */; };
+		816581E31F3B047D00EB2FC3 /* 2nd Peteren.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581C81F3B047D00EB2FC3 /* 2nd Peteren.rtf */; };
+		816581E41F3B047D00EB2FC3 /* 2nd Thessaloniansen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581C91F3B047D00EB2FC3 /* 2nd Thessaloniansen.rtf */; };
+		816581E51F3B047D00EB2FC3 /* 2nd Timothyen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581CA1F3B047D00EB2FC3 /* 2nd Timothyen.rtf */; };
+		816581E61F3B047D00EB2FC3 /* 3rd Johnen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581CB1F3B047D00EB2FC3 /* 3rd Johnen.rtf */; };
+		816581E71F3B047D00EB2FC3 /* Actsen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581CC1F3B047D00EB2FC3 /* Actsen.rtf */; };
+		816581E81F3B047D00EB2FC3 /* Colossiansen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581CD1F3B047D00EB2FC3 /* Colossiansen.rtf */; };
+		816581E91F3B047D00EB2FC3 /* Ephesiansen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581CE1F3B047D00EB2FC3 /* Ephesiansen.rtf */; };
+		816581EA1F3B047D00EB2FC3 /* Galatiansen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581CF1F3B047D00EB2FC3 /* Galatiansen.rtf */; };
+		816581EB1F3B047D00EB2FC3 /* Hebrewsen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581D01F3B047D00EB2FC3 /* Hebrewsen.rtf */; };
+		816581EC1F3B047D00EB2FC3 /* Jamesen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581D11F3B047D00EB2FC3 /* Jamesen.rtf */; };
+		816581ED1F3B047D00EB2FC3 /* Johnen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581D21F3B047D00EB2FC3 /* Johnen.rtf */; };
+		816581EE1F3B047D00EB2FC3 /* Judeen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581D31F3B047D00EB2FC3 /* Judeen.rtf */; };
+		816581EF1F3B047D00EB2FC3 /* Lukeen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581D41F3B047D00EB2FC3 /* Lukeen.rtf */; };
+		816581F01F3B047D00EB2FC3 /* Marken.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581D51F3B047D00EB2FC3 /* Marken.rtf */; };
+		816581F11F3B047D00EB2FC3 /* Matthewen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581D61F3B047D00EB2FC3 /* Matthewen.rtf */; };
+		816581F21F3B047D00EB2FC3 /* Philemonen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581D71F3B047D00EB2FC3 /* Philemonen.rtf */; };
+		816581F31F3B047D00EB2FC3 /* Philippiansen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581D81F3B047D00EB2FC3 /* Philippiansen.rtf */; };
+		816581F41F3B047D00EB2FC3 /* Revelationen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581D91F3B047D00EB2FC3 /* Revelationen.rtf */; };
+		816581F51F3B047D00EB2FC3 /* Romansen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581DA1F3B047D00EB2FC3 /* Romansen.rtf */; };
+		816581F61F3B047D00EB2FC3 /* Titusen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581DB1F3B047D00EB2FC3 /* Titusen.rtf */; };
+		816581FA1F3B04A400EB2FC3 /* Song of Solomonen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581F71F3B04A400EB2FC3 /* Song of Solomonen.rtf */; };
+		816581FB1F3B04A400EB2FC3 /* Zechariahen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581F81F3B04A400EB2FC3 /* Zechariahen.rtf */; };
+		816581FC1F3B04A500EB2FC3 /* Zephaniahen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581F91F3B04A400EB2FC3 /* Zephaniahen.rtf */; };
+		816582001F3B04AE00EB2FC3 /* Proverbsen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581FD1F3B04AE00EB2FC3 /* Proverbsen.rtf */; };
+		816582011F3B04AE00EB2FC3 /* Psalmsen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581FE1F3B04AE00EB2FC3 /* Psalmsen.rtf */; };
+		816582021F3B04AE00EB2FC3 /* Ruthen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816581FF1F3B04AE00EB2FC3 /* Ruthen.rtf */; };
+		816582061F3B04B500EB2FC3 /* Nehemiahen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582031F3B04B500EB2FC3 /* Nehemiahen.rtf */; };
+		816582071F3B04B500EB2FC3 /* Numbersen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582041F3B04B500EB2FC3 /* Numbersen.rtf */; };
+		816582081F3B04B500EB2FC3 /* Obadiahen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582051F3B04B500EB2FC3 /* Obadiahen.rtf */; };
+		8165820C1F3B04BD00EB2FC3 /* Malachien.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582091F3B04BD00EB2FC3 /* Malachien.rtf */; };
+		8165820D1F3B04BD00EB2FC3 /* Micahen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165820A1F3B04BD00EB2FC3 /* Micahen.rtf */; };
+		8165820E1F3B04BD00EB2FC3 /* Nahumen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165820B1F3B04BD00EB2FC3 /* Nahumen.rtf */; };
+		816582121F3B04C400EB2FC3 /* Judgesen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165820F1F3B04C400EB2FC3 /* Judgesen.rtf */; };
+		816582131F3B04C400EB2FC3 /* Lamentationsen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582101F3B04C400EB2FC3 /* Lamentationsen.rtf */; };
+		816582141F3B04C400EB2FC3 /* Leviticusen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582111F3B04C400EB2FC3 /* Leviticusen.rtf */; };
+		816582181F3B04CC00EB2FC3 /* Joelen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582151F3B04CC00EB2FC3 /* Joelen.rtf */; };
+		816582191F3B04CC00EB2FC3 /* Jonahen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582161F3B04CC00EB2FC3 /* Jonahen.rtf */; };
+		8165821A1F3B04CC00EB2FC3 /* Joshuaen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582171F3B04CC00EB2FC3 /* Joshuaen.rtf */; };
+		8165821E1F3B04D700EB2FC3 /* Isaiahen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165821B1F3B04D700EB2FC3 /* Isaiahen.rtf */; };
+		8165821F1F3B04D700EB2FC3 /* Jeremiahen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165821C1F3B04D700EB2FC3 /* Jeremiahen.rtf */; };
+		816582201F3B04D700EB2FC3 /* Joben.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165821D1F3B04D700EB2FC3 /* Joben.rtf */; };
+		816582241F3B04DE00EB2FC3 /* Habakkuken.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582211F3B04DE00EB2FC3 /* Habakkuken.rtf */; };
+		816582251F3B04DE00EB2FC3 /* Haggaien.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582221F3B04DE00EB2FC3 /* Haggaien.rtf */; };
+		816582261F3B04DE00EB2FC3 /* Hoseaen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582231F3B04DE00EB2FC3 /* Hoseaen.rtf */; };
+		8165822A1F3B04E600EB2FC3 /* Ezekielen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582271F3B04E600EB2FC3 /* Ezekielen.rtf */; };
+		8165822B1F3B04E600EB2FC3 /* Ezraen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582281F3B04E600EB2FC3 /* Ezraen.rtf */; };
+		8165822C1F3B04E600EB2FC3 /* Genesisen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582291F3B04E600EB2FC3 /* Genesisen.rtf */; };
+		816582301F3B04ED00EB2FC3 /* Ecclesiastesen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165822D1F3B04ED00EB2FC3 /* Ecclesiastesen.rtf */; };
+		816582311F3B04ED00EB2FC3 /* Estheren.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165822E1F3B04ED00EB2FC3 /* Estheren.rtf */; };
+		816582321F3B04ED00EB2FC3 /* Exodusen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165822F1F3B04ED00EB2FC3 /* Exodusen.rtf */; };
+		816582361F3B04F800EB2FC3 /* Amosen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582331F3B04F800EB2FC3 /* Amosen.rtf */; };
+		816582371F3B04F800EB2FC3 /* Danielen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582341F3B04F800EB2FC3 /* Danielen.rtf */; };
+		816582381F3B04F800EB2FC3 /* Deuteronomyen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582351F3B04F800EB2FC3 /* Deuteronomyen.rtf */; };
+		8165823C1F3B051100EB2FC3 /* 2nd Chroniclesen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582391F3B051100EB2FC3 /* 2nd Chroniclesen.rtf */; };
+		8165823D1F3B051100EB2FC3 /* 2nd Kingsen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165823A1F3B051100EB2FC3 /* 2nd Kingsen.rtf */; };
+		8165823E1F3B051100EB2FC3 /* 2nd Samuelen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165823B1F3B051100EB2FC3 /* 2nd Samuelen.rtf */; };
+		816582421F3B051800EB2FC3 /* 1st Chroniclesen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8165823F1F3B051800EB2FC3 /* 1st Chroniclesen.rtf */; };
+		816582431F3B051800EB2FC3 /* 1st Kingsen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582401F3B051800EB2FC3 /* 1st Kingsen.rtf */; };
+		816582441F3B051800EB2FC3 /* 1st Samuelen.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 816582411F3B051800EB2FC3 /* 1st Samuelen.rtf */; };
+		816582461F3B0BDD00EB2FC3 /* TextDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816582451F3B0BDD00EB2FC3 /* TextDisplayModel.swift */; };
+		816582481F3B108B00EB2FC3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 816582471F3B108B00EB2FC3 /* Info.plist */; };
+		8165824B1F3B2CDD00EB2FC3 /* colorPalette.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8165824A1F3B2CDD00EB2FC3 /* colorPalette.plist */; };
+		8165824D1F3B2CEA00EB2FC3 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8165824C1F3B2CEA00EB2FC3 /* ColorPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8113026C1F33305A00B8AC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		812BC0AA1F25F05C0086EAA3 /* Holy-Bible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Holy-Bible.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		812BC0AD1F25F05C0086EAA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		812BC0AF1F25F05C0086EAA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		812BC0B21F25F05C0086EAA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		812BC0B41F25F05C0086EAA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		812BC0B71F25F05C0086EAA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		812BC0B91F25F05C0086EAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		812BC0C41F25F1060086EAA3 /* SideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideView.swift; sourceTree = "<group>"; };
+		812BC0C51F25F1060086EAA3 /* SideController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideController.swift; sourceTree = "<group>"; };
+		812BC0C61F25F1060086EAA3 /* SideModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideModel.swift; sourceTree = "<group>"; };
+		812BC0CA1F25F11A0086EAA3 /* Holy-Bible-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Holy-Bible-Bridging-Header.h"; sourceTree = "<group>"; };
+		812BC0CB1F25F11A0086EAA3 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		812BC0CC1F25F11A0086EAA3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		812BC0D01F25F1970086EAA3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		812BC0D21F25F1CF0086EAA3 /* LanguageChangeClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageChangeClass.swift; sourceTree = "<group>"; };
+		812BC0D41F25F3FA0086EAA3 /* SingleClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleClass.swift; sourceTree = "<group>"; };
+		812BC0D71F25F7A20086EAA3 /* ar-EG */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-EG"; path = "ar-EG.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		812BC0DF1F25FB6C0086EAA3 /* SettingStaticTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingStaticTableView.swift; sourceTree = "<group>"; };
+		812BC0E11F25FFD20086EAA3 /* SettingStaticTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingStaticTableController.swift; sourceTree = "<group>"; };
+		812BC0E91F2605920086EAA3 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		812BC0EA1F2605920086EAA3 /* DropDown.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDown.xib; sourceTree = "<group>"; };
+		812BC0EB1F2605920086EAA3 /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		812BC0EF1F260A130086EAA3 /* SideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideTableViewCell.swift; sourceTree = "<group>"; };
+		812BC0F21F26153A0086EAA3 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		812BC0F31F26153A0086EAA3 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		812BC0F71F2618090086EAA3 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		8137CB6A1F288CB300ABF998 /* TextDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextDisplayView.swift; sourceTree = "<group>"; };
+		8137CB6C1F288CC800ABF998 /* TextDisplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextDisplayController.swift; sourceTree = "<group>"; };
+		8137CB7B1F28AC9300ABF998 /* PickerList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerList.xib; sourceTree = "<group>"; };
+		8137CB7D1F28AC9D00ABF998 /* PickerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerList.swift; sourceTree = "<group>"; };
+		8137CB811F28C01100ABF998 /* TextSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSettingView.swift; sourceTree = "<group>"; };
+		8137CB831F28C02300ABF998 /* TextSettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSettingController.swift; sourceTree = "<group>"; };
+		8137CB851F28CC6800ABF998 /* TextSettingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSettingModel.swift; sourceTree = "<group>"; };
+		81395C541F274C8F00BFA7C2 /* andlso.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = andlso.ttf; sourceTree = "<group>"; };
+		81395C551F274C8F00BFA7C2 /* arab3end.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = arab3end.ttf; sourceTree = "<group>"; };
+		81395C561F274C8F00BFA7C2 /* ArabDances.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArabDances.ttf; sourceTree = "<group>"; };
+		81395C571F274C8F00BFA7C2 /* ARABIAN KNIGHT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ARABIAN KNIGHT.ttf"; sourceTree = "<group>"; };
+		81395C581F274C8F00BFA7C2 /* ARABOLIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ARABOLIC.TTF; sourceTree = "<group>"; };
+		81395C591F274C8F00BFA7C2 /* BArabics.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BArabics.ttf; sourceTree = "<group>"; };
+		81395C5A1F274C8F00BFA7C2 /* BArshia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BArshia.ttf; sourceTree = "<group>"; };
+		81395C5B1F274C8F00BFA7C2 /* BCompset.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BCompset.ttf; sourceTree = "<group>"; };
+		81395C5C1F274C8F00BFA7C2 /* BDavat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BDavat.ttf; sourceTree = "<group>"; };
+		81395C5D1F274C8F00BFA7C2 /* BElham.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BElham.ttf; sourceTree = "<group>"; };
+		81395C5E1F274C8F00BFA7C2 /* BEsfhnBd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BEsfhnBd.ttf; sourceTree = "<group>"; };
+		81395C5F1F274C8F00BFA7C2 /* Besmellah_2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Besmellah_2.ttf; sourceTree = "<group>"; };
+		81395C601F274C8F00BFA7C2 /* BFantezy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BFantezy.ttf; sourceTree = "<group>"; };
+		81395C611F274C8F00BFA7C2 /* BFerdosi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BFerdosi.ttf; sourceTree = "<group>"; };
+		81395C621F274C8F00BFA7C2 /* BJadidBd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BJadidBd.ttf; sourceTree = "<group>"; };
+		81395C631F274C8F00BFA7C2 /* BKoodakO.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BKoodakO.ttf; sourceTree = "<group>"; };
+		81395C641F274C8F00BFA7C2 /* Diwanltr.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Diwanltr.ttf; sourceTree = "<group>"; };
+		81395C651F274C8F00BFA7C2 /* Taibaijan Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Taibaijan Bold.otf"; sourceTree = "<group>"; };
+		81395C661F274C8F00BFA7C2 /* Taibaijan Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Taibaijan Italic.otf"; sourceTree = "<group>"; };
+		81395C671F274C8F00BFA7C2 /* Taibaijan.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Taibaijan.otf; sourceTree = "<group>"; };
+		81395C681F274C8F00BFA7C2 /* Thabit.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thabit.ttf; sourceTree = "<group>"; };
+		81395C691F274C8F00BFA7C2 /* Besmellah_2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Besmellah_2.ttf; sourceTree = "<group>"; };
+		81395C811F275D5400BFA7C2 /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		81395C871F27634C00BFA7C2 /* ListPartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPartView.swift; sourceTree = "<group>"; };
+		81395C891F27655B00BFA7C2 /* ListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
+		81395C8B1F2765BA00BFA7C2 /* ListPartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPartController.swift; sourceTree = "<group>"; };
+		81395C8D1F276C8600BFA7C2 /* UIButtonExtender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtender.swift; sourceTree = "<group>"; };
+		81395C8F1F27876000BFA7C2 /* ListPartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPartModel.swift; sourceTree = "<group>"; };
+		8165813D1F3B02ED00EB2FC3 /* Ruthar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Ruthar.rtf; sourceTree = "<group>"; };
+		8165813E1F3B02ED00EB2FC3 /* Song of Solomonar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Song of Solomonar.rtf"; sourceTree = "<group>"; };
+		8165813F1F3B02ED00EB2FC3 /* Zechariahar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Zechariahar.rtf; sourceTree = "<group>"; };
+		816581401F3B02ED00EB2FC3 /* Zephaniahar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Zephaniahar.rtf; sourceTree = "<group>"; };
+		816581451F3B02F700EB2FC3 /* Obadiahar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Obadiahar.rtf; sourceTree = "<group>"; };
+		816581461F3B02F700EB2FC3 /* Proverbsar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Proverbsar.rtf; sourceTree = "<group>"; };
+		816581471F3B02F700EB2FC3 /* Psalmsar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Psalmsar.rtf; sourceTree = "<group>"; };
+		8165814B1F3B030000EB2FC3 /* Nahumar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Nahumar.rtf; sourceTree = "<group>"; };
+		8165814C1F3B030000EB2FC3 /* Nehemiahar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Nehemiahar.rtf; sourceTree = "<group>"; };
+		8165814D1F3B030000EB2FC3 /* Numbersar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Numbersar.rtf; sourceTree = "<group>"; };
+		816581511F3B030A00EB2FC3 /* Leviticusar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Leviticusar.rtf; sourceTree = "<group>"; };
+		816581521F3B030A00EB2FC3 /* Malachiar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Malachiar.rtf; sourceTree = "<group>"; };
+		816581531F3B030A00EB2FC3 /* Micahar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Micahar.rtf; sourceTree = "<group>"; };
+		816581571F3B031200EB2FC3 /* Joshuaar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Joshuaar.rtf; sourceTree = "<group>"; };
+		816581581F3B031200EB2FC3 /* Judgesar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Judgesar.rtf; sourceTree = "<group>"; };
+		816581591F3B031200EB2FC3 /* Lamentationsar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Lamentationsar.rtf; sourceTree = "<group>"; };
+		8165815D1F3B031900EB2FC3 /* Jobar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Jobar.rtf; sourceTree = "<group>"; };
+		8165815E1F3B031900EB2FC3 /* Joelar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Joelar.rtf; sourceTree = "<group>"; };
+		8165815F1F3B031900EB2FC3 /* Jonahar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Jonahar.rtf; sourceTree = "<group>"; };
+		816581631F3B032400EB2FC3 /* Hoseaar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Hoseaar.rtf; sourceTree = "<group>"; };
+		816581641F3B032400EB2FC3 /* Isaiahar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Isaiahar.rtf; sourceTree = "<group>"; };
+		816581651F3B032400EB2FC3 /* Jeremiahar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Jeremiahar.rtf; sourceTree = "<group>"; };
+		816581691F3B032B00EB2FC3 /* Genesisar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Genesisar.rtf; sourceTree = "<group>"; };
+		8165816A1F3B032B00EB2FC3 /* Habakkukar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Habakkukar.rtf; sourceTree = "<group>"; };
+		8165816B1F3B032B00EB2FC3 /* Haggaiar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Haggaiar.rtf; sourceTree = "<group>"; };
+		8165816F1F3B033400EB2FC3 /* Exodusar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Exodusar.rtf; sourceTree = "<group>"; };
+		816581701F3B033400EB2FC3 /* Ezekielar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Ezekielar.rtf; sourceTree = "<group>"; };
+		816581711F3B033400EB2FC3 /* Ezraar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Ezraar.rtf; sourceTree = "<group>"; };
+		816581751F3B033B00EB2FC3 /* Deuteronomyar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Deuteronomyar.rtf; sourceTree = "<group>"; };
+		816581761F3B033B00EB2FC3 /* Ecclesiastesar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Ecclesiastesar.rtf; sourceTree = "<group>"; };
+		816581771F3B033B00EB2FC3 /* Estherar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Estherar.rtf; sourceTree = "<group>"; };
+		8165817B1F3B034300EB2FC3 /* 2nd Samuelar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Samuelar.rtf"; sourceTree = "<group>"; };
+		8165817C1F3B034300EB2FC3 /* Amosar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Amosar.rtf; sourceTree = "<group>"; };
+		8165817D1F3B034300EB2FC3 /* Danielar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Danielar.rtf; sourceTree = "<group>"; };
+		816581811F3B034B00EB2FC3 /* 1st Samuelar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Samuelar.rtf"; sourceTree = "<group>"; };
+		816581821F3B034B00EB2FC3 /* 2nd Chroniclesar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Chroniclesar.rtf"; sourceTree = "<group>"; };
+		816581831F3B034B00EB2FC3 /* 2nd Kingsar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Kingsar.rtf"; sourceTree = "<group>"; };
+		816581871F3B035200EB2FC3 /* 1st Chroniclesar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Chroniclesar.rtf"; sourceTree = "<group>"; };
+		816581881F3B035200EB2FC3 /* 1st Kingsar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Kingsar.rtf"; sourceTree = "<group>"; };
+		8165818B1F3B036A00EB2FC3 /* 1st Corinthiansar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Corinthiansar.rtf"; sourceTree = "<group>"; };
+		8165818C1F3B036A00EB2FC3 /* 1st Johnar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Johnar.rtf"; sourceTree = "<group>"; };
+		8165818D1F3B036A00EB2FC3 /* 1st Peterar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Peterar.rtf"; sourceTree = "<group>"; };
+		8165818E1F3B036A00EB2FC3 /* 1st Thessaloniansar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Thessaloniansar.rtf"; sourceTree = "<group>"; };
+		8165818F1F3B036A00EB2FC3 /* 1st Timothyar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Timothyar.rtf"; sourceTree = "<group>"; };
+		816581901F3B036A00EB2FC3 /* 2nd Corinthiansar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Corinthiansar.rtf"; sourceTree = "<group>"; };
+		816581911F3B036A00EB2FC3 /* 2nd Johnar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Johnar.rtf"; sourceTree = "<group>"; };
+		816581921F3B036A00EB2FC3 /* 2nd Peterar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Peterar.rtf"; sourceTree = "<group>"; };
+		816581931F3B036A00EB2FC3 /* 2nd Thessaloniansar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Thessaloniansar.rtf"; sourceTree = "<group>"; };
+		816581941F3B036A00EB2FC3 /* 2nd Timothyar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Timothyar.rtf"; sourceTree = "<group>"; };
+		816581951F3B036A00EB2FC3 /* 3rd Johnar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "3rd Johnar.rtf"; sourceTree = "<group>"; };
+		816581961F3B036A00EB2FC3 /* Actsar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Actsar.rtf; sourceTree = "<group>"; };
+		816581971F3B036A00EB2FC3 /* Colossiansar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Colossiansar.rtf; sourceTree = "<group>"; };
+		816581981F3B036A00EB2FC3 /* Ephesiansar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Ephesiansar.rtf; sourceTree = "<group>"; };
+		816581991F3B036A00EB2FC3 /* Galatiansar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Galatiansar.rtf; sourceTree = "<group>"; };
+		8165819A1F3B036A00EB2FC3 /* Hebrewsar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Hebrewsar.rtf; sourceTree = "<group>"; };
+		8165819B1F3B036A00EB2FC3 /* Jamesar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Jamesar.rtf; sourceTree = "<group>"; };
+		8165819C1F3B036A00EB2FC3 /* Johnar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Johnar.rtf; sourceTree = "<group>"; };
+		8165819D1F3B036A00EB2FC3 /* Judear.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Judear.rtf; sourceTree = "<group>"; };
+		8165819E1F3B036A00EB2FC3 /* Lukear.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Lukear.rtf; sourceTree = "<group>"; };
+		8165819F1F3B036A00EB2FC3 /* Markar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Markar.rtf; sourceTree = "<group>"; };
+		816581A01F3B036A00EB2FC3 /* Matthewar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Matthewar.rtf; sourceTree = "<group>"; };
+		816581A11F3B036A00EB2FC3 /* Philemonar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Philemonar.rtf; sourceTree = "<group>"; };
+		816581A21F3B036A00EB2FC3 /* Philippiansar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Philippiansar.rtf; sourceTree = "<group>"; };
+		816581A31F3B036A00EB2FC3 /* Revelationar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Revelationar.rtf; sourceTree = "<group>"; };
+		816581A41F3B036A00EB2FC3 /* Romansar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Romansar.rtf; sourceTree = "<group>"; };
+		816581A51F3B036A00EB2FC3 /* Titusar.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Titusar.rtf; sourceTree = "<group>"; };
+		816581C11F3B047D00EB2FC3 /* 1st Corinthiansen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Corinthiansen.rtf"; sourceTree = "<group>"; };
+		816581C21F3B047D00EB2FC3 /* 1st Johnen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Johnen.rtf"; sourceTree = "<group>"; };
+		816581C31F3B047D00EB2FC3 /* 1st Peteren.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Peteren.rtf"; sourceTree = "<group>"; };
+		816581C41F3B047D00EB2FC3 /* 1st Thessaloniansen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Thessaloniansen.rtf"; sourceTree = "<group>"; };
+		816581C51F3B047D00EB2FC3 /* 1st Timothyen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Timothyen.rtf"; sourceTree = "<group>"; };
+		816581C61F3B047D00EB2FC3 /* 2nd Corinthiansen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Corinthiansen.rtf"; sourceTree = "<group>"; };
+		816581C71F3B047D00EB2FC3 /* 2nd Johnen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Johnen.rtf"; sourceTree = "<group>"; };
+		816581C81F3B047D00EB2FC3 /* 2nd Peteren.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Peteren.rtf"; sourceTree = "<group>"; };
+		816581C91F3B047D00EB2FC3 /* 2nd Thessaloniansen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Thessaloniansen.rtf"; sourceTree = "<group>"; };
+		816581CA1F3B047D00EB2FC3 /* 2nd Timothyen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Timothyen.rtf"; sourceTree = "<group>"; };
+		816581CB1F3B047D00EB2FC3 /* 3rd Johnen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "3rd Johnen.rtf"; sourceTree = "<group>"; };
+		816581CC1F3B047D00EB2FC3 /* Actsen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Actsen.rtf; sourceTree = "<group>"; };
+		816581CD1F3B047D00EB2FC3 /* Colossiansen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Colossiansen.rtf; sourceTree = "<group>"; };
+		816581CE1F3B047D00EB2FC3 /* Ephesiansen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Ephesiansen.rtf; sourceTree = "<group>"; };
+		816581CF1F3B047D00EB2FC3 /* Galatiansen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Galatiansen.rtf; sourceTree = "<group>"; };
+		816581D01F3B047D00EB2FC3 /* Hebrewsen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Hebrewsen.rtf; sourceTree = "<group>"; };
+		816581D11F3B047D00EB2FC3 /* Jamesen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Jamesen.rtf; sourceTree = "<group>"; };
+		816581D21F3B047D00EB2FC3 /* Johnen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Johnen.rtf; sourceTree = "<group>"; };
+		816581D31F3B047D00EB2FC3 /* Judeen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Judeen.rtf; sourceTree = "<group>"; };
+		816581D41F3B047D00EB2FC3 /* Lukeen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Lukeen.rtf; sourceTree = "<group>"; };
+		816581D51F3B047D00EB2FC3 /* Marken.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Marken.rtf; sourceTree = "<group>"; };
+		816581D61F3B047D00EB2FC3 /* Matthewen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Matthewen.rtf; sourceTree = "<group>"; };
+		816581D71F3B047D00EB2FC3 /* Philemonen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Philemonen.rtf; sourceTree = "<group>"; };
+		816581D81F3B047D00EB2FC3 /* Philippiansen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Philippiansen.rtf; sourceTree = "<group>"; };
+		816581D91F3B047D00EB2FC3 /* Revelationen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Revelationen.rtf; sourceTree = "<group>"; };
+		816581DA1F3B047D00EB2FC3 /* Romansen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Romansen.rtf; sourceTree = "<group>"; };
+		816581DB1F3B047D00EB2FC3 /* Titusen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Titusen.rtf; sourceTree = "<group>"; };
+		816581F71F3B04A400EB2FC3 /* Song of Solomonen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Song of Solomonen.rtf"; sourceTree = "<group>"; };
+		816581F81F3B04A400EB2FC3 /* Zechariahen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Zechariahen.rtf; sourceTree = "<group>"; };
+		816581F91F3B04A400EB2FC3 /* Zephaniahen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Zephaniahen.rtf; sourceTree = "<group>"; };
+		816581FD1F3B04AE00EB2FC3 /* Proverbsen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Proverbsen.rtf; sourceTree = "<group>"; };
+		816581FE1F3B04AE00EB2FC3 /* Psalmsen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Psalmsen.rtf; sourceTree = "<group>"; };
+		816581FF1F3B04AE00EB2FC3 /* Ruthen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Ruthen.rtf; sourceTree = "<group>"; };
+		816582031F3B04B500EB2FC3 /* Nehemiahen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Nehemiahen.rtf; sourceTree = "<group>"; };
+		816582041F3B04B500EB2FC3 /* Numbersen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Numbersen.rtf; sourceTree = "<group>"; };
+		816582051F3B04B500EB2FC3 /* Obadiahen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Obadiahen.rtf; sourceTree = "<group>"; };
+		816582091F3B04BD00EB2FC3 /* Malachien.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Malachien.rtf; sourceTree = "<group>"; };
+		8165820A1F3B04BD00EB2FC3 /* Micahen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Micahen.rtf; sourceTree = "<group>"; };
+		8165820B1F3B04BD00EB2FC3 /* Nahumen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Nahumen.rtf; sourceTree = "<group>"; };
+		8165820F1F3B04C400EB2FC3 /* Judgesen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Judgesen.rtf; sourceTree = "<group>"; };
+		816582101F3B04C400EB2FC3 /* Lamentationsen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Lamentationsen.rtf; sourceTree = "<group>"; };
+		816582111F3B04C400EB2FC3 /* Leviticusen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Leviticusen.rtf; sourceTree = "<group>"; };
+		816582151F3B04CC00EB2FC3 /* Joelen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Joelen.rtf; sourceTree = "<group>"; };
+		816582161F3B04CC00EB2FC3 /* Jonahen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Jonahen.rtf; sourceTree = "<group>"; };
+		816582171F3B04CC00EB2FC3 /* Joshuaen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Joshuaen.rtf; sourceTree = "<group>"; };
+		8165821B1F3B04D700EB2FC3 /* Isaiahen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Isaiahen.rtf; sourceTree = "<group>"; };
+		8165821C1F3B04D700EB2FC3 /* Jeremiahen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Jeremiahen.rtf; sourceTree = "<group>"; };
+		8165821D1F3B04D700EB2FC3 /* Joben.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Joben.rtf; sourceTree = "<group>"; };
+		816582211F3B04DE00EB2FC3 /* Habakkuken.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Habakkuken.rtf; sourceTree = "<group>"; };
+		816582221F3B04DE00EB2FC3 /* Haggaien.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Haggaien.rtf; sourceTree = "<group>"; };
+		816582231F3B04DE00EB2FC3 /* Hoseaen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Hoseaen.rtf; sourceTree = "<group>"; };
+		816582271F3B04E600EB2FC3 /* Ezekielen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Ezekielen.rtf; sourceTree = "<group>"; };
+		816582281F3B04E600EB2FC3 /* Ezraen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Ezraen.rtf; sourceTree = "<group>"; };
+		816582291F3B04E600EB2FC3 /* Genesisen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Genesisen.rtf; sourceTree = "<group>"; };
+		8165822D1F3B04ED00EB2FC3 /* Ecclesiastesen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Ecclesiastesen.rtf; sourceTree = "<group>"; };
+		8165822E1F3B04ED00EB2FC3 /* Estheren.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Estheren.rtf; sourceTree = "<group>"; };
+		8165822F1F3B04ED00EB2FC3 /* Exodusen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Exodusen.rtf; sourceTree = "<group>"; };
+		816582331F3B04F800EB2FC3 /* Amosen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Amosen.rtf; sourceTree = "<group>"; };
+		816582341F3B04F800EB2FC3 /* Danielen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Danielen.rtf; sourceTree = "<group>"; };
+		816582351F3B04F800EB2FC3 /* Deuteronomyen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Deuteronomyen.rtf; sourceTree = "<group>"; };
+		816582391F3B051100EB2FC3 /* 2nd Chroniclesen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Chroniclesen.rtf"; sourceTree = "<group>"; };
+		8165823A1F3B051100EB2FC3 /* 2nd Kingsen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Kingsen.rtf"; sourceTree = "<group>"; };
+		8165823B1F3B051100EB2FC3 /* 2nd Samuelen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "2nd Samuelen.rtf"; sourceTree = "<group>"; };
+		8165823F1F3B051800EB2FC3 /* 1st Chroniclesen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Chroniclesen.rtf"; sourceTree = "<group>"; };
+		816582401F3B051800EB2FC3 /* 1st Kingsen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Kingsen.rtf"; sourceTree = "<group>"; };
+		816582411F3B051800EB2FC3 /* 1st Samuelen.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "1st Samuelen.rtf"; sourceTree = "<group>"; };
+		816582451F3B0BDD00EB2FC3 /* TextDisplayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextDisplayModel.swift; sourceTree = "<group>"; };
+		816582471F3B108B00EB2FC3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8165824A1F3B2CDD00EB2FC3 /* colorPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colorPalette.plist; sourceTree = "<group>"; };
+		8165824C1F3B2CEA00EB2FC3 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +427,407 @@
 		812BC0AC1F25F05C0086EAA3 /* Holy-Bible */ = {
 			isa = PBXGroup;
 			children = (
-				812BC0AD1F25F05C0086EAA3 /* AppDelegate.swift */,
-				812BC0AF1F25F05C0086EAA3 /* ViewController.swift */,
-				812BC0B11F25F05C0086EAA3 /* Main.storyboard */,
+				816582491F3B2CCA00EB2FC3 /* Color picker */,
+				8137CB691F288C4200ABF998 /* Bible Data Files */,
+				81395C801F275D3A00BFA7C2 /* extensions */,
+				812BC0F81F2621300086EAA3 /* fonts */,
+				812BC0E31F2605320086EAA3 /* custome views */,
+				812BC0CE1F25F1200086EAA3 /* Bridging-file */,
+				812BC0C01F25F0CE0086EAA3 /* Support files */,
+				812BC0DE1F25F9B70086EAA3 /* StoryBoard */,
+				812BC0BF1F25F0BE0086EAA3 /* All modle */,
 				812BC0B41F25F05C0086EAA3 /* Assets.xcassets */,
-				812BC0B61F25F05C0086EAA3 /* LaunchScreen.storyboard */,
-				812BC0B91F25F05C0086EAA3 /* Info.plist */,
 			);
 			path = "Holy-Bible";
+			sourceTree = "<group>";
+		};
+		812BC0BF1F25F0BE0086EAA3 /* All modle */ = {
+			isa = PBXGroup;
+			children = (
+				81395C911F279E7700BFA7C2 /* view text */,
+				81395C861F27632C00BFA7C2 /* listPart */,
+				812BC0DD1F25F9A70086EAA3 /* setting */,
+				812BC0CF1F25F18E0086EAA3 /* home */,
+				812BC0C11F25F0DE0086EAA3 /* side menu */,
+			);
+			name = "All modle";
+			sourceTree = "<group>";
+		};
+		812BC0C01F25F0CE0086EAA3 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				816582471F3B108B00EB2FC3 /* Info.plist */,
+				812BC0D41F25F3FA0086EAA3 /* SingleClass.swift */,
+				812BC0CA1F25F11A0086EAA3 /* Holy-Bible-Bridging-Header.h */,
+				812BC0D21F25F1CF0086EAA3 /* LanguageChangeClass.swift */,
+				812BC0AD1F25F05C0086EAA3 /* AppDelegate.swift */,
+				812BC0DC1F25F7E10086EAA3 /* Localizable.strings */,
+			);
+			name = "Support files";
+			sourceTree = "<group>";
+		};
+		812BC0C11F25F0DE0086EAA3 /* side menu */ = {
+			isa = PBXGroup;
+			children = (
+				812BC0C31F25F0F00086EAA3 /* lib */,
+				812BC0C21F25F0E80086EAA3 /* controller */,
+			);
+			name = "side menu";
+			sourceTree = "<group>";
+		};
+		812BC0C21F25F0E80086EAA3 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				812BC0C41F25F1060086EAA3 /* SideView.swift */,
+				812BC0C51F25F1060086EAA3 /* SideController.swift */,
+				812BC0C61F25F1060086EAA3 /* SideModel.swift */,
+				812BC0EF1F260A130086EAA3 /* SideTableViewCell.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		812BC0C31F25F0F00086EAA3 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				812BC0CB1F25F11A0086EAA3 /* SWRevealViewController.h */,
+				812BC0CC1F25F11A0086EAA3 /* SWRevealViewController.m */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		812BC0CE1F25F1200086EAA3 /* Bridging-file */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Bridging-file";
+			sourceTree = "<group>";
+		};
+		812BC0CF1F25F18E0086EAA3 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				812BC0D01F25F1970086EAA3 /* ViewController.swift */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		812BC0DD1F25F9A70086EAA3 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				8137CB801F28BFAF00ABF998 /* for text view */,
+				8137CB7F1F28BFA100ABF998 /* General */,
+			);
+			name = setting;
+			sourceTree = "<group>";
+		};
+		812BC0DE1F25F9B70086EAA3 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				812BC0B11F25F05C0086EAA3 /* Main.storyboard */,
+				812BC0B61F25F05C0086EAA3 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		812BC0E31F2605320086EAA3 /* custome views */ = {
+			isa = PBXGroup;
+			children = (
+				8137CB7A1F28ABAC00ABF998 /* pickerData */,
+				812BC0E41F26053E0086EAA3 /* DropDown */,
+			);
+			name = "custome views";
+			sourceTree = "<group>";
+		};
+		812BC0E41F26053E0086EAA3 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				812BC0E91F2605920086EAA3 /* arrow.png */,
+				812BC0EA1F2605920086EAA3 /* DropDown.xib */,
+				812BC0EB1F2605920086EAA3 /* DropDown.swift */,
+			);
+			name = DropDown;
+			sourceTree = "<group>";
+		};
+		812BC0F81F2621300086EAA3 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				81395C541F274C8F00BFA7C2 /* andlso.ttf */,
+				81395C551F274C8F00BFA7C2 /* arab3end.ttf */,
+				81395C561F274C8F00BFA7C2 /* ArabDances.ttf */,
+				81395C571F274C8F00BFA7C2 /* ARABIAN KNIGHT.ttf */,
+				81395C581F274C8F00BFA7C2 /* ARABOLIC.TTF */,
+				81395C591F274C8F00BFA7C2 /* BArabics.ttf */,
+				81395C5A1F274C8F00BFA7C2 /* BArshia.ttf */,
+				81395C5B1F274C8F00BFA7C2 /* BCompset.ttf */,
+				81395C5C1F274C8F00BFA7C2 /* BDavat.ttf */,
+				81395C5D1F274C8F00BFA7C2 /* BElham.ttf */,
+				81395C5E1F274C8F00BFA7C2 /* BEsfhnBd.ttf */,
+				81395C5F1F274C8F00BFA7C2 /* Besmellah_2.ttf */,
+				81395C601F274C8F00BFA7C2 /* BFantezy.ttf */,
+				81395C611F274C8F00BFA7C2 /* BFerdosi.ttf */,
+				81395C621F274C8F00BFA7C2 /* BJadidBd.ttf */,
+				81395C631F274C8F00BFA7C2 /* BKoodakO.ttf */,
+				81395C641F274C8F00BFA7C2 /* Diwanltr.ttf */,
+				81395C651F274C8F00BFA7C2 /* Taibaijan Bold.otf */,
+				81395C661F274C8F00BFA7C2 /* Taibaijan Italic.otf */,
+				81395C671F274C8F00BFA7C2 /* Taibaijan.otf */,
+				81395C681F274C8F00BFA7C2 /* Thabit.ttf */,
+				81395C691F274C8F00BFA7C2 /* Besmellah_2.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		8137CB691F288C4200ABF998 /* Bible Data Files */ = {
+			isa = PBXGroup;
+			children = (
+				8137CB6F1F288E0D00ABF998 /* Arabic */,
+				8137CB6E1F288DF900ABF998 /* English */,
+			);
+			name = "Bible Data Files";
+			sourceTree = "<group>";
+		};
+		8137CB6E1F288DF900ABF998 /* English */ = {
+			isa = PBXGroup;
+			children = (
+				8137CB731F288E2F00ABF998 /* new */,
+				8137CB721F288E2900ABF998 /* old */,
+			);
+			name = English;
+			sourceTree = "<group>";
+		};
+		8137CB6F1F288E0D00ABF998 /* Arabic */ = {
+			isa = PBXGroup;
+			children = (
+				8137CB711F288E2200ABF998 /* new */,
+				8137CB701F288E1600ABF998 /* Old */,
+			);
+			name = Arabic;
+			sourceTree = "<group>";
+		};
+		8137CB701F288E1600ABF998 /* Old */ = {
+			isa = PBXGroup;
+			children = (
+				816581451F3B02F700EB2FC3 /* Obadiahar.rtf */,
+				816581511F3B030A00EB2FC3 /* Leviticusar.rtf */,
+				816581521F3B030A00EB2FC3 /* Malachiar.rtf */,
+				816581571F3B031200EB2FC3 /* Joshuaar.rtf */,
+				816581871F3B035200EB2FC3 /* 1st Chroniclesar.rtf */,
+				816581881F3B035200EB2FC3 /* 1st Kingsar.rtf */,
+				816581581F3B031200EB2FC3 /* Judgesar.rtf */,
+				8165815D1F3B031900EB2FC3 /* Jobar.rtf */,
+				816581811F3B034B00EB2FC3 /* 1st Samuelar.rtf */,
+				816581821F3B034B00EB2FC3 /* 2nd Chroniclesar.rtf */,
+				816581831F3B034B00EB2FC3 /* 2nd Kingsar.rtf */,
+				8165817B1F3B034300EB2FC3 /* 2nd Samuelar.rtf */,
+				8165817C1F3B034300EB2FC3 /* Amosar.rtf */,
+				8165817D1F3B034300EB2FC3 /* Danielar.rtf */,
+				816581691F3B032B00EB2FC3 /* Genesisar.rtf */,
+				8165816A1F3B032B00EB2FC3 /* Habakkukar.rtf */,
+				816581751F3B033B00EB2FC3 /* Deuteronomyar.rtf */,
+				816581761F3B033B00EB2FC3 /* Ecclesiastesar.rtf */,
+				816581771F3B033B00EB2FC3 /* Estherar.rtf */,
+				8165816F1F3B033400EB2FC3 /* Exodusar.rtf */,
+				816581701F3B033400EB2FC3 /* Ezekielar.rtf */,
+				816581711F3B033400EB2FC3 /* Ezraar.rtf */,
+				8165816B1F3B032B00EB2FC3 /* Haggaiar.rtf */,
+				816581631F3B032400EB2FC3 /* Hoseaar.rtf */,
+				816581641F3B032400EB2FC3 /* Isaiahar.rtf */,
+				816581651F3B032400EB2FC3 /* Jeremiahar.rtf */,
+				8165815E1F3B031900EB2FC3 /* Joelar.rtf */,
+				8165815F1F3B031900EB2FC3 /* Jonahar.rtf */,
+				816581591F3B031200EB2FC3 /* Lamentationsar.rtf */,
+				816581531F3B030A00EB2FC3 /* Micahar.rtf */,
+				8165814B1F3B030000EB2FC3 /* Nahumar.rtf */,
+				8165814C1F3B030000EB2FC3 /* Nehemiahar.rtf */,
+				8165814D1F3B030000EB2FC3 /* Numbersar.rtf */,
+				816581461F3B02F700EB2FC3 /* Proverbsar.rtf */,
+				816581471F3B02F700EB2FC3 /* Psalmsar.rtf */,
+				8165813D1F3B02ED00EB2FC3 /* Ruthar.rtf */,
+				8165813E1F3B02ED00EB2FC3 /* Song of Solomonar.rtf */,
+				8165813F1F3B02ED00EB2FC3 /* Zechariahar.rtf */,
+				816581401F3B02ED00EB2FC3 /* Zephaniahar.rtf */,
+			);
+			name = Old;
+			sourceTree = "<group>";
+		};
+		8137CB711F288E2200ABF998 /* new */ = {
+			isa = PBXGroup;
+			children = (
+				8165818B1F3B036A00EB2FC3 /* 1st Corinthiansar.rtf */,
+				8165818C1F3B036A00EB2FC3 /* 1st Johnar.rtf */,
+				8165818D1F3B036A00EB2FC3 /* 1st Peterar.rtf */,
+				8165818E1F3B036A00EB2FC3 /* 1st Thessaloniansar.rtf */,
+				8165818F1F3B036A00EB2FC3 /* 1st Timothyar.rtf */,
+				816581901F3B036A00EB2FC3 /* 2nd Corinthiansar.rtf */,
+				816581911F3B036A00EB2FC3 /* 2nd Johnar.rtf */,
+				816581921F3B036A00EB2FC3 /* 2nd Peterar.rtf */,
+				816581931F3B036A00EB2FC3 /* 2nd Thessaloniansar.rtf */,
+				816581941F3B036A00EB2FC3 /* 2nd Timothyar.rtf */,
+				816581951F3B036A00EB2FC3 /* 3rd Johnar.rtf */,
+				816581961F3B036A00EB2FC3 /* Actsar.rtf */,
+				816581971F3B036A00EB2FC3 /* Colossiansar.rtf */,
+				816581981F3B036A00EB2FC3 /* Ephesiansar.rtf */,
+				816581991F3B036A00EB2FC3 /* Galatiansar.rtf */,
+				8165819A1F3B036A00EB2FC3 /* Hebrewsar.rtf */,
+				8165819B1F3B036A00EB2FC3 /* Jamesar.rtf */,
+				8165819C1F3B036A00EB2FC3 /* Johnar.rtf */,
+				8165819D1F3B036A00EB2FC3 /* Judear.rtf */,
+				8165819E1F3B036A00EB2FC3 /* Lukear.rtf */,
+				8165819F1F3B036A00EB2FC3 /* Markar.rtf */,
+				816581A01F3B036A00EB2FC3 /* Matthewar.rtf */,
+				816581A11F3B036A00EB2FC3 /* Philemonar.rtf */,
+				816581A21F3B036A00EB2FC3 /* Philippiansar.rtf */,
+				816581A31F3B036A00EB2FC3 /* Revelationar.rtf */,
+				816581A41F3B036A00EB2FC3 /* Romansar.rtf */,
+				816581A51F3B036A00EB2FC3 /* Titusar.rtf */,
+			);
+			name = new;
+			sourceTree = "<group>";
+		};
+		8137CB721F288E2900ABF998 /* old */ = {
+			isa = PBXGroup;
+			children = (
+				8165823F1F3B051800EB2FC3 /* 1st Chroniclesen.rtf */,
+				816582401F3B051800EB2FC3 /* 1st Kingsen.rtf */,
+				816582411F3B051800EB2FC3 /* 1st Samuelen.rtf */,
+				816582151F3B04CC00EB2FC3 /* Joelen.rtf */,
+				816582391F3B051100EB2FC3 /* 2nd Chroniclesen.rtf */,
+				8165823A1F3B051100EB2FC3 /* 2nd Kingsen.rtf */,
+				8165823B1F3B051100EB2FC3 /* 2nd Samuelen.rtf */,
+				8165822D1F3B04ED00EB2FC3 /* Ecclesiastesen.rtf */,
+				8165822E1F3B04ED00EB2FC3 /* Estheren.rtf */,
+				8165822F1F3B04ED00EB2FC3 /* Exodusen.rtf */,
+				816582211F3B04DE00EB2FC3 /* Habakkuken.rtf */,
+				816582271F3B04E600EB2FC3 /* Ezekielen.rtf */,
+				816582331F3B04F800EB2FC3 /* Amosen.rtf */,
+				816582341F3B04F800EB2FC3 /* Danielen.rtf */,
+				816582351F3B04F800EB2FC3 /* Deuteronomyen.rtf */,
+				816582281F3B04E600EB2FC3 /* Ezraen.rtf */,
+				816582291F3B04E600EB2FC3 /* Genesisen.rtf */,
+				816582221F3B04DE00EB2FC3 /* Haggaien.rtf */,
+				816582231F3B04DE00EB2FC3 /* Hoseaen.rtf */,
+				8165821B1F3B04D700EB2FC3 /* Isaiahen.rtf */,
+				8165821C1F3B04D700EB2FC3 /* Jeremiahen.rtf */,
+				8165821D1F3B04D700EB2FC3 /* Joben.rtf */,
+				816582161F3B04CC00EB2FC3 /* Jonahen.rtf */,
+				816582171F3B04CC00EB2FC3 /* Joshuaen.rtf */,
+				8165820F1F3B04C400EB2FC3 /* Judgesen.rtf */,
+				816582101F3B04C400EB2FC3 /* Lamentationsen.rtf */,
+				816582111F3B04C400EB2FC3 /* Leviticusen.rtf */,
+				816581FD1F3B04AE00EB2FC3 /* Proverbsen.rtf */,
+				816582031F3B04B500EB2FC3 /* Nehemiahen.rtf */,
+				816582091F3B04BD00EB2FC3 /* Malachien.rtf */,
+				8165820A1F3B04BD00EB2FC3 /* Micahen.rtf */,
+				8165820B1F3B04BD00EB2FC3 /* Nahumen.rtf */,
+				816582041F3B04B500EB2FC3 /* Numbersen.rtf */,
+				816582051F3B04B500EB2FC3 /* Obadiahen.rtf */,
+				816581FE1F3B04AE00EB2FC3 /* Psalmsen.rtf */,
+				816581FF1F3B04AE00EB2FC3 /* Ruthen.rtf */,
+				816581F71F3B04A400EB2FC3 /* Song of Solomonen.rtf */,
+				816581F81F3B04A400EB2FC3 /* Zechariahen.rtf */,
+				816581F91F3B04A400EB2FC3 /* Zephaniahen.rtf */,
+			);
+			name = old;
+			sourceTree = "<group>";
+		};
+		8137CB731F288E2F00ABF998 /* new */ = {
+			isa = PBXGroup;
+			children = (
+				816581C11F3B047D00EB2FC3 /* 1st Corinthiansen.rtf */,
+				816581C21F3B047D00EB2FC3 /* 1st Johnen.rtf */,
+				816581C31F3B047D00EB2FC3 /* 1st Peteren.rtf */,
+				816581C41F3B047D00EB2FC3 /* 1st Thessaloniansen.rtf */,
+				816581C51F3B047D00EB2FC3 /* 1st Timothyen.rtf */,
+				816581C61F3B047D00EB2FC3 /* 2nd Corinthiansen.rtf */,
+				816581C71F3B047D00EB2FC3 /* 2nd Johnen.rtf */,
+				816581C81F3B047D00EB2FC3 /* 2nd Peteren.rtf */,
+				816581C91F3B047D00EB2FC3 /* 2nd Thessaloniansen.rtf */,
+				816581CA1F3B047D00EB2FC3 /* 2nd Timothyen.rtf */,
+				816581CB1F3B047D00EB2FC3 /* 3rd Johnen.rtf */,
+				816581CC1F3B047D00EB2FC3 /* Actsen.rtf */,
+				816581CD1F3B047D00EB2FC3 /* Colossiansen.rtf */,
+				816581CE1F3B047D00EB2FC3 /* Ephesiansen.rtf */,
+				816581CF1F3B047D00EB2FC3 /* Galatiansen.rtf */,
+				816581D01F3B047D00EB2FC3 /* Hebrewsen.rtf */,
+				816581D11F3B047D00EB2FC3 /* Jamesen.rtf */,
+				816581D21F3B047D00EB2FC3 /* Johnen.rtf */,
+				816581D31F3B047D00EB2FC3 /* Judeen.rtf */,
+				816581D41F3B047D00EB2FC3 /* Lukeen.rtf */,
+				816581D51F3B047D00EB2FC3 /* Marken.rtf */,
+				816581D61F3B047D00EB2FC3 /* Matthewen.rtf */,
+				816581D71F3B047D00EB2FC3 /* Philemonen.rtf */,
+				816581D81F3B047D00EB2FC3 /* Philippiansen.rtf */,
+				816581D91F3B047D00EB2FC3 /* Revelationen.rtf */,
+				816581DA1F3B047D00EB2FC3 /* Romansen.rtf */,
+				816581DB1F3B047D00EB2FC3 /* Titusen.rtf */,
+			);
+			name = new;
+			sourceTree = "<group>";
+		};
+		8137CB7A1F28ABAC00ABF998 /* pickerData */ = {
+			isa = PBXGroup;
+			children = (
+				8137CB7D1F28AC9D00ABF998 /* PickerList.swift */,
+				8137CB7B1F28AC9300ABF998 /* PickerList.xib */,
+			);
+			name = pickerData;
+			sourceTree = "<group>";
+		};
+		8137CB7F1F28BFA100ABF998 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				812BC0E11F25FFD20086EAA3 /* SettingStaticTableController.swift */,
+				812BC0DF1F25FB6C0086EAA3 /* SettingStaticTableView.swift */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		8137CB801F28BFAF00ABF998 /* for text view */ = {
+			isa = PBXGroup;
+			children = (
+				8137CB811F28C01100ABF998 /* TextSettingView.swift */,
+				8137CB831F28C02300ABF998 /* TextSettingController.swift */,
+				8137CB851F28CC6800ABF998 /* TextSettingModel.swift */,
+			);
+			name = "for text view";
+			sourceTree = "<group>";
+		};
+		81395C801F275D3A00BFA7C2 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81395C8D1F276C8600BFA7C2 /* UIButtonExtender.swift */,
+				81395C811F275D5400BFA7C2 /* extension.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
+		81395C861F27632C00BFA7C2 /* listPart */ = {
+			isa = PBXGroup;
+			children = (
+				81395C871F27634C00BFA7C2 /* ListPartView.swift */,
+				81395C891F27655B00BFA7C2 /* ListViewCell.swift */,
+				81395C8B1F2765BA00BFA7C2 /* ListPartController.swift */,
+				81395C8F1F27876000BFA7C2 /* ListPartModel.swift */,
+			);
+			name = listPart;
+			sourceTree = "<group>";
+		};
+		81395C911F279E7700BFA7C2 /* view text */ = {
+			isa = PBXGroup;
+			children = (
+				8137CB6A1F288CB300ABF998 /* TextDisplayView.swift */,
+				8137CB6C1F288CC800ABF998 /* TextDisplayController.swift */,
+				816582451F3B0BDD00EB2FC3 /* TextDisplayModel.swift */,
+			);
+			name = "view text";
+			sourceTree = "<group>";
+		};
+		816582491F3B2CCA00EB2FC3 /* Color picker */ = {
+			isa = PBXGroup;
+			children = (
+				8165824C1F3B2CEA00EB2FC3 /* ColorPickerViewController.swift */,
+				8165824A1F3B2CDD00EB2FC3 /* colorPalette.plist */,
+			);
+			name = "Color picker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +862,7 @@
 				TargetAttributes = {
 					812BC0A91F25F05C0086EAA3 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 8Z3K9T9U74;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -108,6 +874,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 812BC0A11F25F05C0086EAA3;
 			productRefGroup = 812BC0AB1F25F05C0086EAA3 /* Products */;
@@ -124,9 +891,169 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				816581E11F3B047D00EB2FC3 /* 2nd Corinthiansen.rtf in Resources */,
+				8165815C1F3B031200EB2FC3 /* Lamentationsar.rtf in Resources */,
+				816581801F3B034300EB2FC3 /* Danielar.rtf in Resources */,
+				81395C791F274C8F00BFA7C2 /* BKoodakO.ttf in Resources */,
+				8165824B1F3B2CDD00EB2FC3 /* colorPalette.plist in Resources */,
+				816581B91F3B036A00EB2FC3 /* Lukear.rtf in Resources */,
+				816581AD1F3B036A00EB2FC3 /* 2nd Peterar.rtf in Resources */,
+				81395C6C1F274C8F00BFA7C2 /* ArabDances.ttf in Resources */,
+				816582071F3B04B500EB2FC3 /* Numbersen.rtf in Resources */,
+				8165820E1F3B04BD00EB2FC3 /* Nahumen.rtf in Resources */,
+				816581B81F3B036A00EB2FC3 /* Judear.rtf in Resources */,
+				816581DC1F3B047D00EB2FC3 /* 1st Corinthiansen.rtf in Resources */,
+				816581F01F3B047D00EB2FC3 /* Marken.rtf in Resources */,
+				8165820D1F3B04BD00EB2FC3 /* Micahen.rtf in Resources */,
+				816581B01F3B036A00EB2FC3 /* 3rd Johnar.rtf in Resources */,
+				816582121F3B04C400EB2FC3 /* Judgesen.rtf in Resources */,
+				8165823E1F3B051100EB2FC3 /* 2nd Samuelen.rtf in Resources */,
+				8165816E1F3B032B00EB2FC3 /* Haggaiar.rtf in Resources */,
+				816581661F3B032400EB2FC3 /* Hoseaar.rtf in Resources */,
+				81395C701F274C8F00BFA7C2 /* BArshia.ttf in Resources */,
+				8165823C1F3B051100EB2FC3 /* 2nd Chroniclesen.rtf in Resources */,
+				816582481F3B108B00EB2FC3 /* Info.plist in Resources */,
+				816581EA1F3B047D00EB2FC3 /* Galatiansen.rtf in Resources */,
+				8165820C1F3B04BD00EB2FC3 /* Malachien.rtf in Resources */,
+				816581BE1F3B036A00EB2FC3 /* Revelationar.rtf in Resources */,
+				816581E81F3B047D00EB2FC3 /* Colossiansen.rtf in Resources */,
+				81395C741F274C8F00BFA7C2 /* BEsfhnBd.ttf in Resources */,
+				8165817A1F3B033B00EB2FC3 /* Estherar.rtf in Resources */,
+				816582241F3B04DE00EB2FC3 /* Habakkuken.rtf in Resources */,
+				816582261F3B04DE00EB2FC3 /* Hoseaen.rtf in Resources */,
+				816581BC1F3B036A00EB2FC3 /* Philemonar.rtf in Resources */,
+				81395C7A1F274C8F00BFA7C2 /* Diwanltr.ttf in Resources */,
+				816581411F3B02ED00EB2FC3 /* Ruthar.rtf in Resources */,
+				816581791F3B033B00EB2FC3 /* Ecclesiastesar.rtf in Resources */,
+				81395C7B1F274C8F00BFA7C2 /* Taibaijan Bold.otf in Resources */,
+				816581F21F3B047D00EB2FC3 /* Philemonen.rtf in Resources */,
+				816582001F3B04AE00EB2FC3 /* Proverbsen.rtf in Resources */,
+				816581E21F3B047D00EB2FC3 /* 2nd Johnen.rtf in Resources */,
+				816581FB1F3B04A400EB2FC3 /* Zechariahen.rtf in Resources */,
+				816581601F3B031900EB2FC3 /* Jobar.rtf in Resources */,
+				816581ED1F3B047D00EB2FC3 /* Johnen.rtf in Resources */,
+				8165821E1F3B04D700EB2FC3 /* Isaiahen.rtf in Resources */,
+				816582381F3B04F800EB2FC3 /* Deuteronomyen.rtf in Resources */,
+				816582301F3B04ED00EB2FC3 /* Ecclesiastesen.rtf in Resources */,
+				81395C6B1F274C8F00BFA7C2 /* arab3end.ttf in Resources */,
 				812BC0B81F25F05C0086EAA3 /* LaunchScreen.storyboard in Resources */,
+				81395C6A1F274C8F00BFA7C2 /* andlso.ttf in Resources */,
+				816581A71F3B036A00EB2FC3 /* 1st Johnar.rtf in Resources */,
+				816582371F3B04F800EB2FC3 /* Danielen.rtf in Resources */,
+				8165822A1F3B04E600EB2FC3 /* Ezekielen.rtf in Resources */,
+				816581891F3B035200EB2FC3 /* 1st Chroniclesar.rtf in Resources */,
+				816581E61F3B047D00EB2FC3 /* 3rd Johnen.rtf in Resources */,
+				816581E91F3B047D00EB2FC3 /* Ephesiansen.rtf in Resources */,
+				816582021F3B04AE00EB2FC3 /* Ruthen.rtf in Resources */,
+				816581B51F3B036A00EB2FC3 /* Hebrewsar.rtf in Resources */,
+				816581A91F3B036A00EB2FC3 /* 1st Thessaloniansar.rtf in Resources */,
+				8165823D1F3B051100EB2FC3 /* 2nd Kingsen.rtf in Resources */,
+				816582191F3B04CC00EB2FC3 /* Jonahen.rtf in Resources */,
+				816582141F3B04C400EB2FC3 /* Leviticusen.rtf in Resources */,
+				816581731F3B033400EB2FC3 /* Ezekielar.rtf in Resources */,
+				816581DE1F3B047D00EB2FC3 /* 1st Peteren.rtf in Resources */,
+				816582431F3B051800EB2FC3 /* 1st Kingsen.rtf in Resources */,
+				812BC0DA1F25F7E10086EAA3 /* Localizable.strings in Resources */,
+				8165822C1F3B04E600EB2FC3 /* Genesisen.rtf in Resources */,
+				816581E51F3B047D00EB2FC3 /* 2nd Timothyen.rtf in Resources */,
+				816581861F3B034B00EB2FC3 /* 2nd Kingsar.rtf in Resources */,
+				816581C01F3B036A00EB2FC3 /* Titusar.rtf in Resources */,
+				816581481F3B02F700EB2FC3 /* Obadiahar.rtf in Resources */,
+				816581A61F3B036A00EB2FC3 /* 1st Corinthiansar.rtf in Resources */,
+				816581E31F3B047D00EB2FC3 /* 2nd Peteren.rtf in Resources */,
+				816581421F3B02ED00EB2FC3 /* Song of Solomonar.rtf in Resources */,
+				81395C6D1F274C8F00BFA7C2 /* ARABIAN KNIGHT.ttf in Resources */,
+				81395C7D1F274C8F00BFA7C2 /* Taibaijan.otf in Resources */,
+				816582131F3B04C400EB2FC3 /* Lamentationsen.rtf in Resources */,
+				81395C7C1F274C8F00BFA7C2 /* Taibaijan Italic.otf in Resources */,
 				812BC0B51F25F05C0086EAA3 /* Assets.xcassets in Resources */,
+				816581621F3B031900EB2FC3 /* Jonahar.rtf in Resources */,
+				8165817E1F3B034300EB2FC3 /* 2nd Samuelar.rtf in Resources */,
+				816581AF1F3B036A00EB2FC3 /* 2nd Timothyar.rtf in Resources */,
+				816581E01F3B047D00EB2FC3 /* 1st Timothyen.rtf in Resources */,
+				81395C721F274C8F00BFA7C2 /* BDavat.ttf in Resources */,
+				8165815B1F3B031200EB2FC3 /* Judgesar.rtf in Resources */,
+				81395C771F274C8F00BFA7C2 /* BFerdosi.ttf in Resources */,
+				816581BD1F3B036A00EB2FC3 /* Philippiansar.rtf in Resources */,
+				81395C6F1F274C8F00BFA7C2 /* BArabics.ttf in Resources */,
+				816581851F3B034B00EB2FC3 /* 2nd Chroniclesar.rtf in Resources */,
+				816581501F3B030000EB2FC3 /* Numbersar.rtf in Resources */,
+				816581781F3B033B00EB2FC3 /* Deuteronomyar.rtf in Resources */,
+				816582361F3B04F800EB2FC3 /* Amosen.rtf in Resources */,
+				81395C7F1F274C8F00BFA7C2 /* Besmellah_2.ttf in Resources */,
+				8165816C1F3B032B00EB2FC3 /* Genesisar.rtf in Resources */,
+				816581BF1F3B036A00EB2FC3 /* Romansar.rtf in Resources */,
+				816581AA1F3B036A00EB2FC3 /* 1st Timothyar.rtf in Resources */,
+				816581B11F3B036A00EB2FC3 /* Actsar.rtf in Resources */,
+				816581F61F3B047D00EB2FC3 /* Titusen.rtf in Resources */,
+				816581B61F3B036A00EB2FC3 /* Jamesar.rtf in Resources */,
+				8165817F1F3B034300EB2FC3 /* Amosar.rtf in Resources */,
+				816581EC1F3B047D00EB2FC3 /* Jamesen.rtf in Resources */,
+				816581BB1F3B036A00EB2FC3 /* Matthewar.rtf in Resources */,
+				816581E71F3B047D00EB2FC3 /* Actsen.rtf in Resources */,
+				816581EB1F3B047D00EB2FC3 /* Hebrewsen.rtf in Resources */,
+				8165818A1F3B035200EB2FC3 /* 1st Kingsar.rtf in Resources */,
+				816581671F3B032400EB2FC3 /* Isaiahar.rtf in Resources */,
+				816581B31F3B036A00EB2FC3 /* Ephesiansar.rtf in Resources */,
+				816581BA1F3B036A00EB2FC3 /* Markar.rtf in Resources */,
+				81395C781F274C8F00BFA7C2 /* BJadidBd.ttf in Resources */,
+				816581DF1F3B047D00EB2FC3 /* 1st Thessaloniansen.rtf in Resources */,
+				81395C761F274C8F00BFA7C2 /* BFantezy.ttf in Resources */,
+				816582181F3B04CC00EB2FC3 /* Joelen.rtf in Resources */,
+				816581841F3B034B00EB2FC3 /* 1st Samuelar.rtf in Resources */,
+				816581E41F3B047D00EB2FC3 /* 2nd Thessaloniansen.rtf in Resources */,
+				8165821F1F3B04D700EB2FC3 /* Jeremiahen.rtf in Resources */,
+				816581431F3B02ED00EB2FC3 /* Zechariahar.rtf in Resources */,
+				816581B41F3B036A00EB2FC3 /* Galatiansar.rtf in Resources */,
+				816581AB1F3B036A00EB2FC3 /* 2nd Corinthiansar.rtf in Resources */,
+				816581DD1F3B047D00EB2FC3 /* 1st Johnen.rtf in Resources */,
+				816582201F3B04D700EB2FC3 /* Joben.rtf in Resources */,
+				816582011F3B04AE00EB2FC3 /* Psalmsen.rtf in Resources */,
+				81395C711F274C8F00BFA7C2 /* BCompset.ttf in Resources */,
+				816581AC1F3B036A00EB2FC3 /* 2nd Johnar.rtf in Resources */,
+				816581741F3B033400EB2FC3 /* Ezraar.rtf in Resources */,
+				816581A81F3B036A00EB2FC3 /* 1st Peterar.rtf in Resources */,
+				8165816D1F3B032B00EB2FC3 /* Habakkukar.rtf in Resources */,
+				8165815A1F3B031200EB2FC3 /* Joshuaar.rtf in Resources */,
+				816582251F3B04DE00EB2FC3 /* Haggaien.rtf in Resources */,
+				816582061F3B04B500EB2FC3 /* Nehemiahen.rtf in Resources */,
+				816581AE1F3B036A00EB2FC3 /* 2nd Thessaloniansar.rtf in Resources */,
+				816581FA1F3B04A400EB2FC3 /* Song of Solomonen.rtf in Resources */,
+				816582421F3B051800EB2FC3 /* 1st Chroniclesen.rtf in Resources */,
+				816581EE1F3B047D00EB2FC3 /* Judeen.rtf in Resources */,
+				816582081F3B04B500EB2FC3 /* Obadiahen.rtf in Resources */,
+				8165814F1F3B030000EB2FC3 /* Nehemiahar.rtf in Resources */,
+				816582311F3B04ED00EB2FC3 /* Estheren.rtf in Resources */,
+				816581491F3B02F700EB2FC3 /* Proverbsar.rtf in Resources */,
+				816581551F3B030A00EB2FC3 /* Malachiar.rtf in Resources */,
+				8165814E1F3B030000EB2FC3 /* Nahumar.rtf in Resources */,
+				812BC0EC1F2605920086EAA3 /* arrow.png in Resources */,
+				816581F51F3B047D00EB2FC3 /* Romansen.rtf in Resources */,
+				812BC0ED1F2605920086EAA3 /* DropDown.xib in Resources */,
+				816581541F3B030A00EB2FC3 /* Leviticusar.rtf in Resources */,
+				816581B21F3B036A00EB2FC3 /* Colossiansar.rtf in Resources */,
+				816581FC1F3B04A500EB2FC3 /* Zephaniahen.rtf in Resources */,
+				816582321F3B04ED00EB2FC3 /* Exodusen.rtf in Resources */,
+				8137CB7C1F28AC9300ABF998 /* PickerList.xib in Resources */,
+				816581611F3B031900EB2FC3 /* Joelar.rtf in Resources */,
+				816581721F3B033400EB2FC3 /* Exodusar.rtf in Resources */,
+				816581F11F3B047D00EB2FC3 /* Matthewen.rtf in Resources */,
+				8165821A1F3B04CC00EB2FC3 /* Joshuaen.rtf in Resources */,
+				81395C7E1F274C8F00BFA7C2 /* Thabit.ttf in Resources */,
 				812BC0B31F25F05C0086EAA3 /* Main.storyboard in Resources */,
+				816581F31F3B047D00EB2FC3 /* Philippiansen.rtf in Resources */,
+				816581681F3B032400EB2FC3 /* Jeremiahar.rtf in Resources */,
+				81395C6E1F274C8F00BFA7C2 /* ARABOLIC.TTF in Resources */,
+				8165814A1F3B02F700EB2FC3 /* Psalmsar.rtf in Resources */,
+				8165822B1F3B04E600EB2FC3 /* Ezraen.rtf in Resources */,
+				816581F41F3B047D00EB2FC3 /* Revelationen.rtf in Resources */,
+				816582441F3B051800EB2FC3 /* 1st Samuelen.rtf in Resources */,
+				81395C731F274C8F00BFA7C2 /* BElham.ttf in Resources */,
+				816581EF1F3B047D00EB2FC3 /* Lukeen.rtf in Resources */,
+				816581561F3B030A00EB2FC3 /* Micahar.rtf in Resources */,
+				816581B71F3B036A00EB2FC3 /* Johnar.rtf in Resources */,
+				816581441F3B02ED00EB2FC3 /* Zephaniahar.rtf in Resources */,
+				81395C751F274C8F00BFA7C2 /* Besmellah_2.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +1064,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				812BC0B01F25F05C0086EAA3 /* ViewController.swift in Sources */,
+				8165824D1F3B2CEA00EB2FC3 /* ColorPickerViewController.swift in Sources */,
+				81395C8E1F276C8600BFA7C2 /* UIButtonExtender.swift in Sources */,
+				812BC0D11F25F1970086EAA3 /* ViewController.swift in Sources */,
+				812BC0C81F25F1060086EAA3 /* SideController.swift in Sources */,
+				812BC0D31F25F1CF0086EAA3 /* LanguageChangeClass.swift in Sources */,
+				812BC0C71F25F1060086EAA3 /* SideView.swift in Sources */,
+				81395C8A1F27655B00BFA7C2 /* ListViewCell.swift in Sources */,
+				81395C901F27876000BFA7C2 /* ListPartModel.swift in Sources */,
+				81395C881F27634C00BFA7C2 /* ListPartView.swift in Sources */,
+				812BC0D51F25F3FA0086EAA3 /* SingleClass.swift in Sources */,
+				8137CB6B1F288CB300ABF998 /* TextDisplayView.swift in Sources */,
+				812BC0C91F25F1060086EAA3 /* SideModel.swift in Sources */,
+				812BC0F01F260A130086EAA3 /* SideTableViewCell.swift in Sources */,
+				816582461F3B0BDD00EB2FC3 /* TextDisplayModel.swift in Sources */,
+				8137CB821F28C01100ABF998 /* TextSettingView.swift in Sources */,
+				8137CB861F28CC6800ABF998 /* TextSettingModel.swift in Sources */,
+				812BC0E01F25FB6C0086EAA3 /* SettingStaticTableView.swift in Sources */,
+				8137CB6D1F288CC800ABF998 /* TextDisplayController.swift in Sources */,
+				81395C821F275D5400BFA7C2 /* extension.swift in Sources */,
+				8137CB7E1F28AC9D00ABF998 /* PickerList.swift in Sources */,
 				812BC0AE1F25F05C0086EAA3 /* AppDelegate.swift in Sources */,
+				812BC0CD1F25F11A0086EAA3 /* SWRevealViewController.m in Sources */,
+				812BC0EE1F2605920086EAA3 /* DropDown.swift in Sources */,
+				812BC0E21F25FFD20086EAA3 /* SettingStaticTableController.swift in Sources */,
+				81395C8C1F2765BA00BFA7C2 /* ListPartController.swift in Sources */,
+				8137CB841F28C02300ABF998 /* TextSettingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +1100,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				812BC0B21F25F05C0086EAA3 /* Base */,
+				812BC0F71F2618090086EAA3 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -157,8 +1109,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				812BC0B71F25F05C0086EAA3 /* Base */,
+				812BC0D71F25F7A20086EAA3 /* ar-EG */,
+				812BC0F21F26153A0086EAA3 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		812BC0DC1F25F7E10086EAA3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				812BC0F31F26153A0086EAA3 /* ar */,
+				8113026C1F33305A00B8AC21 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -168,6 +1131,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -218,6 +1182,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -261,11 +1226,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8Z3K9T9U74;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Holy-Bible/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Chtar.Holy-Bible";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Holy-Bible/Holy-Bible-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +1242,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8Z3K9T9U74;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Holy-Bible/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Chtar.Holy-Bible";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Holy-Bible/Holy-Bible-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +1272,7 @@
 				812BC0BE1F25F05C0086EAA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
